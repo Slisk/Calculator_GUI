@@ -14,6 +14,10 @@ public class Calculator_GUI {
 	
 	double firstnum;
 	double secondnum;
+	double result; 
+	String operations; 
+	String answer; 
+	
 
 	/**
 	 * Launch the application.
@@ -174,6 +178,14 @@ public class Calculator_GUI {
 		frame.getContentPane().add(btnClear);
 		
 		JButton btnProcent = new JButton("%");
+		btnProcent.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				firstnum = Double.parseDouble(textField.getText()); 
+				textField.setText(""); 
+				operations = "%";  
+			}
+		});
 		btnProcent.setBounds(409, 86, 55, 52);
 		frame.getContentPane().add(btnProcent);
 		
@@ -182,18 +194,50 @@ public class Calculator_GUI {
 		frame.getContentPane().add(btnRandom);
 		
 		JButton btnPlus = new JButton("+");
+		btnPlus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				firstnum = Double.parseDouble(textField.getText()); 
+				textField.setText(""); 
+				operations = "+"; 
+			}
+		});
 		btnPlus.setBounds(368, 151, 55, 46);
 		frame.getContentPane().add(btnPlus);
 		
 		JButton btnMinus = new JButton("-");
+		btnMinus.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				firstnum = Double.parseDouble(textField.getText()); 
+				textField.setText(""); 
+				operations = "-"; 
+			}
+		});
 		btnMinus.setBounds(451, 151, 55, 46);
 		frame.getContentPane().add(btnMinus);
 		
 		JButton btnMultiply = new JButton("*");
+		btnMultiply.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				firstnum = Double.parseDouble(textField.getText()); 
+				textField.setText(""); 
+				operations = "*";  
+			}
+		});
 		btnMultiply.setBounds(369, 210, 55, 46);
 		frame.getContentPane().add(btnMultiply);
 		
 		JButton btnDivision = new JButton("/");
+		btnDivision.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				firstnum = Double.parseDouble(textField.getText()); 
+				textField.setText(""); 
+				operations = "/";  
+			}
+		});
 		btnDivision.setBounds(451, 210, 55, 46);
 		frame.getContentPane().add(btnDivision);
 		
