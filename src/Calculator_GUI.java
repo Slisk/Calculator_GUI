@@ -257,6 +257,34 @@ public class Calculator_GUI {
 		btnEquals.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				String answer;
+				secondnum = Double.parseDouble(textField.getText()); 
+				if (operations == "+") {
+					result = firstnum + secondnum; 
+					answer = String.format("%.2f", result); 
+					textField.setText(answer); 
+				}
+				else if (operations == "-") {
+					result = firstnum - secondnum; 
+					answer = String.format("%.2f", result); 
+					textField.setText(answer); 
+				}
+				else if (operations == "*") {
+					result = firstnum * secondnum; 
+					answer = String.format("%.2f", result); 
+					textField.setText(answer); 
+				}
+				else if (operations == "/") {
+					result = firstnum / secondnum; 
+					answer = String.format("%.2f", result); 
+					textField.setText(answer); 
+				}
+				else if (operations == "%") {
+					result = firstnum % secondnum; 
+					answer = String.format("%.2f", result); 
+					textField.setText(answer); 
+				}
+				
 				
 			}
 		});

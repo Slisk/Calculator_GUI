@@ -1,0 +1,29 @@
+[33mcommit 4b79cf450d535f31a171852434053011daa0f3f3[m
+Author: Johan Moback <Johan Moback>
+Date:   Wed Nov 2 11:44:38 2016 +0100
+
+    I have now added actionListener to most of the operations.
+
+[33mcommit 076ee673063c768c412a591387d19a9fbcff87c8[m
+Author: Johan Moback <Johan Moback>
+Date:   Wed Nov 2 11:20:08 2016 +0100
+
+    I have now added actionListener to all the numbers within the calculator. Also added action to clear btn.
+
+[33mcommit ac4d53cf4e36ab11be0b51c661bf1b916bf3b6df[m
+Author: Johan Moback <Johan Moback>
+Date:   Wed Nov 2 10:45:44 2016 +0100
+
+    The layout of the calculator is now done, I will now add code so it can performe tasks.
+
+[33mcommit 89cc106948b217d519f4b126794174b1c8a8c58b[m
+Author: Johan Moback <Johan Moback>
+Date:   Wed Nov 2 10:25:06 2016 +0100
+
+    this is my second commit, I have added a clear btn, %, random value, addition and subtraction.
+
+[33mcommit 67a28967727508c33bf611b185ddc6dd02b7f7a9[m
+Author: Johan Moback <Johan Moback>
+Date:   Wed Nov 2 10:01:08 2016 +0100
+
+    this is my first commit, I have starded the project by creating the number layout for the calculator.
