@@ -58,6 +58,10 @@ public class Calculator_GUI {
 		frame.getContentPane().add(btn7);
 		
 		JButton btn8 = new JButton("8");
+		btn8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
 		btn8.setBounds(73, 75, 49, 40);
 		frame.getContentPane().add(btn8);
 		
@@ -88,5 +92,29 @@ public class Calculator_GUI {
 		JButton btn3 = new JButton("3");
 		btn3.setBounds(134, 181, 49, 40);
 		frame.getContentPane().add(btn3);
+		
+		JButton btn0 = new JButton("0");
+		btn0.setBounds(73, 234, 49, 40);
+		frame.getContentPane().add(btn0);
+		
+		JButton btnClear = new JButton("Clear");
+		btnClear.setBounds(245, 75, 97, 40);
+		frame.getContentPane().add(btnClear);
+		
+		JButton btnProcent = new JButton("%");
+		btnProcent.setBounds(369, 69, 55, 52);
+		frame.getContentPane().add(btnProcent);
+		
+		JButton btnRandom = new JButton("Rnd");
+		btnRandom.setBounds(451, 69, 55, 52);
+		frame.getContentPane().add(btnRandom);
+		
+		JButton btnPlus = new JButton("+");
+		btnPlus.setBounds(368, 151, 55, 46);
+		frame.getContentPane().add(btnPlus);
+		
+		JButton btnMinus = new JButton("-");
+		btnMinus.setBounds(451, 151, 55, 46);
+		frame.getContentPane().add(btnMinus);
 	}
 }
